@@ -11,6 +11,8 @@
     </head>
     <body>
         
+        <audio id="my_audio" src="metal-pipe.mp3" autoplay></audio>
+
         <div onclick="changeIcon();" class="open-div">
 
             <i id="icon" class="fa fa-2x fa-bars"></i>
@@ -93,10 +95,16 @@
             </div>
 
         </div>
-        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="index.js" async defer></script>
 
         <script>
+
+        $(".image-item").click(function(){
+            var audio = document.getElementById("my_audio");
+        audio.play();
+        });
+
             var mediaQuery991 = window.matchMedia("(max-width: 991px)");
 var mediaQuery768 = window.matchMedia("(max-width: 768px)");
 

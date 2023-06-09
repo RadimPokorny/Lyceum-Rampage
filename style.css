@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@600&display=swap');
 
 :root{
-    --green:#a6c016;
-    --background: #fefefa;
-    --text: #282e05;
-    --accent: #93a914;
-    --secondary: #fafded;
+    --green:#8e92af;
+    --background: #041225;
+    --text: #f1f7fd;
+    --accent: #1a6edb;
+    --secondary: #072040;
     --font: 'Wix Madefor Text', sans-serif;
 }
 
 *{
     margin: 0;
     padding: 0;
+}
+
+i{
+    cursor: pointer;
 }
 
 .center{
@@ -128,6 +132,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-title i{
+    cursor:default;
 }
 
 .header-item{
