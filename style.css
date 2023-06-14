@@ -1,307 +1,636 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@600&display=swap');
 
+
+
 :root{
-    --green:#a6c016;
-    --background: #fefefa;
-    --text: #282e05;
-    --accent: #93a914;
-    --secondary: #fafded;
+
+    --green:#8e92af;
+
+    --background: #041225;
+
+    --text: #f1f7fd;
+
+    --accent: #1a6edb;
+
+    --secondary: #072040;
+
     --font: 'Wix Madefor Text', sans-serif;
+
 }
+
+
 
 *{
+
     margin: 0;
+
     padding: 0;
+
 }
+
+
+
+i{
+
+    cursor: pointer;
+
+}
+
+
 
 .center{
+
     position: absolute;
+
     width: 100%;
+
     height: 100%;
+
     background-color: var(--background);
+
     display: flex;
+
     justify-content: center;
+
     text-align: center;
+
     align-items: center;
+
 }
+
+
 
 .header-left {
+
     position: sticky;
+
     top: 0;
+
     background-color: var(--accent);
+
     width: 30%;
+
     height: 100vh;
+
     float: left;
+
   }
 
+
+
 .content{
+
     position: relative;
+
     width: 70%;
+
     height: 100%;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     text-align: center;
+
     align-items: center;
+
 }
 
+
+
 .content-title{
+
     width: 100%;
+
     height: 100px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     font-family: var(--font);
+
     color:var(--text);
+
     font-size: 48px;
+
 }
+
+
+
 
 
 .content-desc{
+
     position: relative;
+
     width: 50%;
+
     height: 400px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     text-align: left;
+
     color: var(--text);
+
     font-family: var(--font);
+
     font-size: 24px;
+
 }
+
+
+
 
 
 .download-button{
+
     width: 300px;
+
     height: 100px;
+
     background-color: var(--accent);
+
     color: var(--text);
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     font-size: 36px;
+
     font-family: var(--font);
+
 }
+
+
 
 .items{
+
     position: relative;
+
     height: 60%;
+
     width: 100%;
+
 }
+
+
 
 .header-bottom{
+
     position: relative;
+
     height: 40%;
+
     width: 100%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: end;
+
 }
+
+
 
 .icons{
+
     position: relative;
+
     width: 100%;
+
     height: 100px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
 }
+
+
 
 .icons i{
+
     margin: 10px;
+
     font-size: 36px;
+
     color:var(--text)
+
 }
+
+.icons i:hover{
+
+    color:var(--background);
+
+}
+
+
 
 .download-button:hover{
+
     background-color: var(--text);
+
     color: var(--secondary);
+
     cursor: pointer;
+
 }
+
+
 
 .header-title{
+
     position: relative;
+
     color: var(--text);
+
     font-family: var(--font);
+
     font-size: 96px;
+
     height: 150px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
 }
+
+
+
+.header-title i{
+
+    cursor:default;
+
+}
+
+
 
 .header-item{
+
     position: relative;
+
     color: var(--text);
+
     font-size: 24px;
+
     font-family: var(--font);
+
     width: 100%;
+
     height: 100px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     text-align: center;
+
 }
+
+
 
 .header-item-active{
+
     position: relative;
+
     color: var(--secondary);
+
     background-color: var(--text);
+
     font-size: 24px;
+
     font-family: var(--font);
+
     width: 100%;
+
     height: 100px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     text-align: center;
+
 }
 
+
+
 .header-item:hover{
+
     background-color: var(--text);
+
     color: var(--secondary);
+
     cursor: pointer;
+
 }
+
+
 
 /* Screenshots */
 
+
+
 .content-showcase{
+
     position: relative;
+
     width: 70%;
+
     height: 100vh;
+
     display: flex;
+
     flex-direction:row;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
     align-items: center;
+
     overflow-y: scroll;
+
 }
+
+
 
 .image-item{
+
     position: relative;
+
     width: 300px !important; 
+
     height: 300px !important;
+
     border: 5px solid var(--accent);
+
     margin: 40px;
+
     object-fit: none;
+
 }
+
+
 
 .img{
+
     position: relative;
+
     width: 100%;
+
     height: 100%;
 
+
+
 }
+
+
 
 /* Contacts */
 
+
+
 .content-contacts{
+
     position: relative;
+
     height: 100vh;
+
     width: 70%;
+
     display: flex;
+
     justify-content: center;
+
     text-align: center;
+
     align-items: center;
+
     overflow-y: scroll;
+
     flex-wrap: wrap;
+
 }
+
+
 
 .contact-container{
 
+
+
     position: relative;
+
     width: 300px;
+
     height: 500px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-wrap: wrap;
+
     margin: 50px;
 
+
+
 }
+
+
 
 .contact-item{
+
     position: relative;
+
     width: 90%;
+
     height: 90%;
+
     background-color: var(--accent);
+
     color: var(--secondary);
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-direction: column;
+
 }
+
+
 
 .contact-photo{
+
     position: relative;
+
     width: 100%;
+
     height: 40%;
+
 }
+
+
 
 .contact-img{
+
     position: relative;
+
     width: 100%;
+
     height: 100%;
+
     background-repeat: no-repeat;
+
     background-position: 50% 50%;
+
 }
+
+
 
 .contact-name{
+
     position: relative;
+
     height: 15%;
+
     width: 100%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     text-align: center;
+
     background-color: var(--text);
+
 }
+
+
 
 .contact-name p{
+
     font-size: 24px;
+
     font-family: var(--font);
+
 }
+
+
 
 .contact-media{
+
     position: relative;
+
     width: 80%;
+
     height: 45%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-wrap: wrap;
+
     font-size: 48px;
+
 }
+
+
 
 .icon-item{
+
     position: relative;
+
     width: 50%;
+
     height: 50px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     color: var(--text);
+
 }
 
+
+
 .contact-media i:hover{
+
     color: var(--secondary);
+
     cursor: pointer;
+
 }
+
+
 
 /* menu opener */
 
+
+
 .open-div{
+
     position: fixed;
+
     top: 0;
+
     right: 0;
+
     width: 50px;
+
     height: 50px;
+
     background-color: var(--accent);
+
     z-index: 99;
+
     display: none;
+
     justify-content: center;
+
     align-items: center;
+
     cursor: pointer;
+
 }
+
+
+
 
 

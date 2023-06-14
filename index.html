@@ -1,131 +1,96 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lyceum Rampage</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        
-
-        <div onclick="changeIcon();" class="open-div" id="od">
-
-            <i id="icon" class="fa fa-2x fa-bars"></i>
-
-        </div>
-
-        <div class="center">
-
-            <div class="header-left" id="hl">
-
-                
-                <div class="items">
-
-                   <div class="header-title">
-
-                    <i class="fa fa-coffee" aria-hidden="true"></i>
-
-                    </div>
-
-                    <div class="header-item-active">
-
-                        <p class="">Home</p>
-
-                    </div>
-
-                    <div onclick="location.href='screenshots.html';" class="header-item">
-
-                        <p class="">Screenshots</p>
-
-                    </div>
-
-                    <div onclick="location.href='contact-us.html';" class="header-item">
-
-                        <p class="">Contact us</p>
-
-                    </div> 
-
-                </div>
-                
-                <div class="header-bottom">
-
-                    <div class="icons">
-
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <i class="fa fa-github"></i>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="content">
-
-                <div class="content-title">
-
-                    <p class="">Lyceum Rampage</p>
-
-                </div>
-
-                <div class="content-desc">
-
-                    <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam quis nulla. Nullam faucibus mi quis velit. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Nulla non arcu lacinia neque faucibus fringilla. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.</p>
-
-                </div>
-
-                <div class="download-button">
-
-                    <p class="">Download</p>
-
-                </div>
-
-            </div>
-
-        </div>
-        
-        <script src="index.js" async defer></script>
-
-        <script>
-
-var mediaQuery991 = window.matchMedia("(max-width: 991px)");
-var mediaQuery768 = window.matchMedia("(max-width: 768px)");
-
-function handleMediaQueries() {
-  if (mediaQuery991.matches) {
-    // Změny pro média s maximální šířkou 991px
-    document.querySelector(".content-desc").style.fontSize = "18px";
-  } else {
-    // Zrušení změn pro média s maximální šířkou 991px
-    document.querySelector(".content-desc").style.fontSize = "";
-  }
-
-  if (mediaQuery768.matches) {
-    // Změny pro média s maximální šířkou 768px
-    document.querySelector(".header-left").style.display = "none";
-    document.querySelector(".open-div").style.display = "flex";
-    document.querySelector(".content").style.width = "100%";
-    document.querySelector(".content-desc").style.width = "80%";
-  } else {
-    // Zrušení změn pro média s maximální šířkou 768px
-    document.querySelector(".header-left").style.display = "";
-    document.querySelector(".open-div").style.display = "";
-    document.querySelector(".content").style.width = "";
-    document.querySelector(".content-desc").style.width = "";
-  }
-}
-
-// Spuštění inicializace
-handleMediaQueries();
-
-// Přidání posluchače události resize pro okno
-window.addEventListener("resize", handleMediaQueries);
-
-        </script>
-
-    </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lyceum Rampage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+
+        <div onclick="changeIcon();" class="open-div" id="od">
+
+            <i id="icon" class="fa fa-2x fa-bars"></i>
+
+        </div>
+
+        <div class="center">
+
+            <div class="header-left" id="hl">
+
+                
+                <div class="items">
+
+                   <div class="header-title">
+
+                    <i class="fa fa-coffee" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="header-item-active">
+
+                        <p class="">Home</p>
+
+                    </div>
+
+                    <div onclick="location.href='screenshots.html';" class="header-item">
+
+                        <p class="">Screenshots</p>
+
+                    </div>
+
+                    <div onclick="location.href='contact-us.html';" class="header-item">
+
+                        <p class="">Contact us</p>
+
+                    </div> 
+
+                </div>
+                
+                <div class="header-bottom">
+
+                    <div class="icons">
+
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-github"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="content-title">
+
+                    <p class="">Lyceum Rampage</p>
+
+                </div>
+
+                <div class="content-desc">
+
+                    <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam quis nulla. Nullam faucibus mi quis velit. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Nulla non arcu lacinia neque faucibus fringilla. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.</p>
+
+                </div>
+
+                <div class="download-button">
+
+                    <p class="">Download</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script src="index.js" async defer></script>
+
+        <script src="main.js"></script>
+
+    </body>
 </html>
